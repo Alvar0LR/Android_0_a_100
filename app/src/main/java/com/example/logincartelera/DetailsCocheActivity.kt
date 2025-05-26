@@ -24,7 +24,7 @@ class DetailsCocheActivity : AppCompatActivity() {
             binding.tvNombreDetalle.text = it.nombre
             binding.tvPuertasDetalle.text = it.puertas.toString()
             Glide.with(this).load(it.cover).into(binding.ivCocheDetalle)
-            binding.tvDescripcionDetalle.text = it.descripcion
+            binding.tvDescripcionDetalle.text = it.descripcion.toString()
             binding.tvPrecioDetalle.text = it.coste.toString()
         }
 
